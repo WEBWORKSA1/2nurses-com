@@ -1,0 +1,184 @@
+<div class="funnel" data-tabs id="get-matched">
+ <div class="funnel-tabs" role="tablist" aria-label="Choose your match">
+  <button role="tab" aria-selected="true" aria-controls="fp-school" data-key="school">🎓 Nursing School</button>
+  <button role="tab" aria-selected="false" aria-controls="fp-travel" data-key="travel">✈️ Travel & Jobs</button>
+  <button role="tab" aria-selected="false" aria-controls="fp-employer" data-key="employer">🏥 Hire Nurses</button>
+ </div>
+
+ <!-- ================= SCHOOL MATCH ================= -->
+ <div id="fp-school" role="tabpanel" class="funnel-body">
+  <form data-form="school-match" data-subject="Nursing School Match lead" data-funnel novalidate>
+   <div class="progress"><i></i></div>
+   <div class="step-meta"><span>Step <span class="step-cur">1</span> of <span class="step-tot">5</span></span><span>⏱ About 60 seconds</span></div>
+   <div class="step" data-auto>
+    <h3>Which program are you interested in?</h3>
+    <div class="choices">
+     <label><input type="radio" name="program" value="CNA certificate" data-req> CNA certificate</label>
+     <label><input type="radio" name="program" value="LPN / LVN" data-req> LPN / LVN</label>
+     <label><input type="radio" name="program" value="ADN (RN)" data-req> ADN — become an RN</label>
+     <label><input type="radio" name="program" value="BSN" data-req> BSN / Accelerated BSN</label>
+     <label><input type="radio" name="program" value="RN to BSN" data-req> RN-to-BSN (online)</label>
+     <label><input type="radio" name="program" value="MSN" data-req> MSN / Nurse Educator</label>
+     <label><input type="radio" name="program" value="Nurse Practitioner (FNP/PMHNP/AGNP)" data-req> Nurse Practitioner</label>
+     <label><input type="radio" name="program" value="DNP / CRNA" data-req> DNP / CRNA</label>
+    </div>
+   </div>
+   <div class="step" data-auto>
+    <h3>What is your highest education or license today?</h3>
+    <div class="choices">
+     <label><input type="radio" name="current_level" value="High school / GED" data-req> High school / GED</label>
+     <label><input type="radio" name="current_level" value="Some college" data-req> Some college</label>
+     <label><input type="radio" name="current_level" value="Non-nursing bachelor's" data-req> Non-nursing bachelor’s</label>
+     <label><input type="radio" name="current_level" value="CNA / LPN" data-req> CNA or LPN</label>
+     <label><input type="radio" name="current_level" value="RN - ADN" data-req> RN (ADN)</label>
+     <label><input type="radio" name="current_level" value="RN - BSN or higher" data-req> RN (BSN or higher)</label>
+    </div>
+   </div>
+   <div class="step">
+    <h3>How and when do you want to study?</h3>
+    <div class="choices">
+     <label><input type="radio" name="format" value="Online" data-req> 💻 Online</label>
+     <label><input type="radio" name="format" value="On campus" data-req> 🏫 On campus</label>
+     <label><input type="radio" name="format" value="Hybrid" data-req> 🔀 Hybrid</label>
+     <label><input type="radio" name="format" value="Not sure" data-req> 🤔 Show me all</label>
+    </div>
+    <div class="row mt">
+     <div class="field"><label for="s-start">Start date</label><select id="s-start" name="start" required><option value="">Select…</option><option>Within 3 months</option><option>3–6 months</option><option>6–12 months</option><option>Just researching</option></select></div>
+     <div class="field"><label for="s-zip">ZIP / Postal code</label><input id="s-zip" name="zip" inputmode="text" maxlength="10" placeholder="e.g. 90210" required></div>
+    </div>
+   </div>
+   <div class="step">
+    <h3>A little about you</h3>
+    <div class="row">
+     <div class="field"><label for="s-country">Country</label><select id="s-country" name="country" required><option>United States</option><option>Canada</option><option>United Kingdom</option><option>India</option><option>Philippines</option><option>Nigeria</option><option>Australia</option><option>Other</option></select></div>
+     <div class="field"><label for="s-mil">Military affiliation?</label><select id="s-mil" name="military"><option>No</option><option>Active duty</option><option>Veteran</option><option>Spouse / dependent</option></select></div>
+    </div>
+    <div class="field"><label for="s-goal">Your #1 goal (optional)</label><select id="s-goal" name="goal"><option>Start my nursing career</option><option>Earn more money</option><option>Advance to a specialty</option><option>Flexible schedule</option><option>Leave bedside / leadership</option></select></div>
+   </div>
+   <div class="step">
+    <h3>Where should we send your matches?</h3>
+    <div class="row">
+     <div class="field"><label for="s-fn">First name</label><input id="s-fn" name="first_name" autocomplete="given-name" required></div>
+     <div class="field"><label for="s-ln">Last name</label><input id="s-ln" name="last_name" autocomplete="family-name" required></div>
+    </div>
+    <div class="row">
+     <div class="field"><label for="s-em">Email</label><input id="s-em" type="email" name="email" autocomplete="email" required></div>
+     <div class="field"><label for="s-ph">Phone</label><input id="s-ph" type="tel" name="phone" autocomplete="tel" pattern="[0-9+()\-\s]{7,20}" required></div>
+    </div>
+    <label class="check"><input type="checkbox" name="consent" value="yes" required> <span>By checking this box I agree that 2Nurses.com and up to 3 matched accredited schools may contact me by email, phone or text (including automated means) about programs. Consent is not required to enroll. Msg & data rates may apply. See <a href="privacy.html">Privacy</a>.</span></label>
+    <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+   </div>
+   <div class="step-nav"><button class="btn btn-ghost" data-prev>← Back</button><button class="btn btn-teal" data-next>Continue →</button><button class="btn btn-primary" type="submit">See My Matches →</button></div>
+  </form>
+  <div class="funnel-done" style="display:none;text-align:center;padding:20px">
+   <div style="font-size:3rem">🎉</div><h3>You’re matched!</h3>
+   <p class="muted">A 2Nurses coordinator is reviewing accredited programs that fit your goals. Expect a personal follow-up within 1 business day.</p>
+   <a class="btn btn-teal" href="scholarships.html">Browse scholarships while you wait →</a>
+  </div>
+ </div>
+
+ <!-- ================= TRAVEL & JOBS ================= -->
+ <div id="fp-travel" role="tabpanel" class="funnel-body" hidden>
+  <form data-form="travel-job-match" data-subject="Travel / Job Match lead" data-funnel novalidate>
+   <div class="progress"><i></i></div>
+   <div class="step-meta"><span>Step <span class="step-cur">1</span> of <span class="step-tot">4</span></span><span>One form → vetted agencies & employers</span></div>
+   <div class="step" data-auto>
+    <h3>What type of role do you want?</h3>
+    <div class="choices">
+     <label><input type="radio" name="job_type" value="Travel contract (13 wk)" data-req> ✈️ Travel contract</label>
+     <label><input type="radio" name="job_type" value="Local contract" data-req> 📍 Local contract</label>
+     <label><input type="radio" name="job_type" value="Per diem / PRN" data-req> ⏱ Per diem / PRN</label>
+     <label><input type="radio" name="job_type" value="Permanent staff" data-req> 🏥 Permanent staff</label>
+     <label><input type="radio" name="job_type" value="Remote / non-bedside" data-req> 💻 Remote / non-bedside</label>
+     <label><input type="radio" name="job_type" value="International placement" data-req> 🌍 International</label>
+    </div>
+   </div>
+   <div class="step">
+    <h3>Your license & experience</h3>
+    <div class="row">
+     <div class="field"><label for="t-lic">License</label><select id="t-lic" name="license" required><option value="">Select…</option><option>RN</option><option>LPN / LVN</option><option>NP / APRN</option><option>CRNA</option><option>CNA</option><option>Student / not yet licensed</option></select></div>
+     <div class="field"><label for="t-spec">Primary specialty</label><select id="t-spec" name="specialty" required><option value="">Select…</option><option>Med-Surg</option><option>Telemetry</option><option>ICU / Critical Care</option><option>Emergency</option><option>Labor & Delivery</option><option>NICU</option><option>Operating Room</option><option>PACU</option><option>Cath Lab</option><option>Oncology</option><option>Psych / Behavioral</option><option>Pediatrics</option><option>Dialysis</option><option>Home Health / Hospice</option><option>Long-Term Care</option><option>Other</option></select></div>
+    </div>
+    <div class="row">
+     <div class="field"><label for="t-exp">Years of experience</label><select id="t-exp" name="experience" required><option value="">Select…</option><option>Less than 1 year</option><option>1–2 years</option><option>2–5 years</option><option>5–10 years</option><option>10+ years</option></select></div>
+     <div class="field"><label for="t-compact">Compact (multistate) license?</label><select id="t-compact" name="compact_license"><option>Yes</option><option>No</option><option>Not sure</option></select></div>
+    </div>
+   </div>
+   <div class="step">
+    <h3>Where & when?</h3>
+    <div class="row">
+     <div class="field"><label for="t-where">Preferred states / cities</label><input id="t-where" name="locations" placeholder="e.g. CA, TX, Hawaii, anywhere" required></div>
+     <div class="field"><label for="t-start">Available to start</label><select id="t-start" name="start" required><option value="">Select…</option><option>ASAP</option><option>Within 30 days</option><option>1–3 months</option><option>Just exploring pay</option></select></div>
+    </div>
+    <div class="row">
+     <div class="field"><label for="t-pay">Target weekly pay (USD)</label><select id="t-pay" name="target_pay"><option>$1,500–2,000</option><option>$2,000–2,500</option><option>$2,500–3,000</option><option>$3,000+</option><option>Open</option></select></div>
+     <div class="field"><label for="t-shift">Shift</label><select id="t-shift" name="shift"><option>Any</option><option>Days</option><option>Nights</option><option>Rotating</option></select></div>
+    </div>
+   </div>
+   <div class="step">
+    <h3>Get your personalized pay packages</h3>
+    <div class="row">
+     <div class="field"><label for="t-fn">Full name</label><input id="t-fn" name="name" autocomplete="name" required></div>
+     <div class="field"><label for="t-em">Email</label><input id="t-em" type="email" name="email" autocomplete="email" required></div>
+    </div>
+    <div class="row">
+     <div class="field"><label for="t-ph">Mobile</label><input id="t-ph" type="tel" name="phone" autocomplete="tel" required></div>
+     <div class="field"><label for="t-call">Best time to reach you</label><select id="t-call" name="best_time"><option>Morning</option><option>Afternoon</option><option>Evening</option><option>Text me first</option></select></div>
+    </div>
+    <label class="check"><input type="checkbox" name="consent" value="yes" required> <span>I agree that 2Nurses.com may share my details with up to 4 vetted staffing partners and employers who may contact me by email, phone or SMS about jobs. I can opt out anytime. Consent is not a condition of any service.</span></label>
+    <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+   </div>
+   <div class="step-nav"><button class="btn btn-ghost" data-prev>← Back</button><button class="btn btn-teal" data-next>Continue →</button><button class="btn btn-primary" type="submit">Show My Pay Packages →</button></div>
+  </form>
+  <div class="funnel-done" style="display:none;text-align:center;padding:20px">
+   <div style="font-size:3rem">🚀</div><h3>Request received!</h3>
+   <p class="muted">We’re matching your profile with vetted partners. Meanwhile, estimate your take-home with our travel pay calculator.</p>
+   <a class="btn btn-teal" href="tools.html#travel-pay">Open Travel Pay Calculator →</a>
+  </div>
+ </div>
+
+ <!-- ================= EMPLOYER ================= -->
+ <div id="fp-employer" role="tabpanel" class="funnel-body" hidden>
+  <form data-form="employer-hiring" data-subject="Employer hiring / partner lead" data-funnel novalidate>
+   <div class="progress"><i></i></div>
+   <div class="step-meta"><span>Step <span class="step-cur">1</span> of <span class="step-tot">3</span></span><span>For hospitals, clinics, agencies & schools</span></div>
+   <div class="step" data-auto>
+    <h3>What do you need?</h3>
+    <div class="choices">
+     <label><input type="radio" name="need" value="Hire nurses (post jobs)" data-req> 📣 Post nursing jobs</label>
+     <label><input type="radio" name="need" value="Buy qualified leads" data-req> 🎯 Buy qualified leads</label>
+     <label><input type="radio" name="need" value="Sponsored content / ads" data-req> 📰 Sponsored content & ads</label>
+     <label><input type="radio" name="need" value="Student recruitment (schools)" data-req> 🎓 Student recruitment</label>
+    </div>
+   </div>
+   <div class="step">
+    <h3>Organization details</h3>
+    <div class="row">
+     <div class="field"><label for="e-org">Organization</label><input id="e-org" name="organization" required></div>
+     <div class="field"><label for="e-type">Type</label><select id="e-type" name="org_type" required><option value="">Select…</option><option>Hospital / health system</option><option>Long-term care / SNF</option><option>Staffing agency</option><option>Nursing school / university</option><option>Health-tech / brand</option><option>Other</option></select></div>
+    </div>
+    <div class="row">
+     <div class="field"><label for="e-roles">Roles / volume</label><input id="e-roles" name="volume" placeholder="e.g. 12 ICU RNs, 200 leads/mo" required></div>
+     <div class="field"><label for="e-budget">Monthly budget</label><select id="e-budget" name="budget"><option>Under $500</option><option>$500–2,000</option><option>$2,000–10,000</option><option>$10,000+</option></select></div>
+    </div>
+   </div>
+   <div class="step">
+    <h3>Who should we contact?</h3>
+    <div class="row">
+     <div class="field"><label for="e-name">Name & title</label><input id="e-name" name="contact_name" required></div>
+     <div class="field"><label for="e-em">Work email</label><input id="e-em" type="email" name="email" required></div>
+    </div>
+    <div class="field"><label for="e-ph">Phone</label><input id="e-ph" type="tel" name="phone"></div>
+    <label class="check"><input type="checkbox" name="consent" value="yes" required> <span>I agree to be contacted about 2Nurses.com partnership options.</span></label>
+    <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+   </div>
+   <div class="step-nav"><button class="btn btn-ghost" data-prev>← Back</button><button class="btn btn-teal" data-next>Continue →</button><button class="btn btn-primary" type="submit">Request Proposal →</button></div>
+  </form>
+  <div class="funnel-done" style="display:none;text-align:center;padding:20px">
+   <div style="font-size:3rem">🤝</div><h3>Thanks — proposal on the way.</h3>
+   <p class="muted">Our partnerships desk will send a rate card and audience data within 1 business day.</p>
+   <a class="btn btn-teal" href="advertise.html">See advertising options →</a>
+  </div>
+ </div>
+ <div class="funnel-foot"><span>🔒 SSL-secured</span><span>✓ 100% free for nurses</span><span>✓ No spam — unsubscribe anytime</span></div>
+</div>
