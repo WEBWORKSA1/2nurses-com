@@ -1,0 +1,61 @@
+<!--{"title":"Donate & Support 2Nurses — Scholarships, Free NCLEX Prep & Community","description":"Support 2Nurses.com. Your gift funds nursing scholarships, free NCLEX prep, contest prizes, nurse creators and day-to-day operations. One-time or monthly.","path":"donate.html","priority":"0.8","scripts":["donate.js"]}-->
+<section class="page-hero">
+ <div class="container">
+  <div class="crumbs"><a href="index.html">Home</a> / Donate</div>
+  <h1>Keep it free for every nurse.</h1>
+  <p>2Nurses is independent and reader-supported. Your gift pays for scholarships, free study tools, real contest prizes, and fair pay for the nurses who create our content.</p>
+ </div>
+</section>
+<section class="section" style="padding-top:16px">
+ <div class="container layout-side">
+  <div class="form-card">
+   <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px">
+    <h2 style="font-size:1.5rem">Choose your support</h2>
+    <div class="toggle" id="freq"><button class="on" data-f="one-time">One-time</button><button data-f="monthly">Monthly ♥</button></div>
+   </div>
+   <div class="amounts" id="amts"><button data-a="10">$10</button><button data-a="25" class="on">$25</button><button data-a="50">$50</button><button data-a="100">$100</button></div>
+   <div class="field"><label for="dn-c">Or enter an amount (USD)</label><input id="dn-c" type="number" min="1" placeholder="Other amount"></div>
+   <p class="callout" id="impact">$25 gives a nursing student 1 month of premium NCLEX practice.</p>
+   <div class="field"><label for="dn-fund">Direct my gift to</label><select id="dn-fund"><option>Where it’s needed most (operations)</option><option>2Nurses Scholarship Fund</option><option>Free NCLEX Prep for students</option><option>Contest prizes & recognition</option><option>Marketing & outreach</option><option>Nurse creator & talent fund</option></select></div>
+   <div id="pay-btns" style="display:flex;flex-wrap:wrap;gap:10px"></div>
+   <hr style="border:0;border-top:1px solid var(--line);margin:22px 0">
+   <h3>Pledge your gift</h3>
+   <p class="muted">Pledge now and we will send secure payment options (card, PayPal, bank transfer, UPI or Interac) along with your acknowledgment.</p>
+   <form data-form="donation-pledge" data-subject="Donation pledge" data-success="Thank you! Your pledge is recorded. Secure payment instructions are on their way to your inbox.">
+    <input type="hidden" name="amount" id="dn-amount" value="25"><input type="hidden" name="frequency" id="dn-freq" value="one-time"><input type="hidden" name="fund" id="dn-fund-h" value="Where it’s needed most (operations)">
+    <div class="row"><div class="field"><label for="dp-n">Full name</label><input id="dp-n" name="name" required></div><div class="field"><label for="dp-e">Email</label><input id="dp-e" type="email" name="email" required></div></div>
+    <div class="row"><div class="field"><label for="dp-c">Country</label><input id="dp-c" name="country" required></div><div class="field"><label for="dp-m">Preferred payment</label><select id="dp-m" name="payment_method"><option>Credit/debit card</option><option>PayPal</option><option>Bank transfer</option><option>UPI (India)</option><option>Interac e-Transfer (Canada)</option></select></div></div>
+    <div class="field"><label for="dp-h">Give in honor of a nurse (optional)</label><input id="dp-h" name="in_honor_of" placeholder="Nurse’s name"></div>
+    <div class="field"><label for="dp-msg">Message (optional)</label><textarea id="dp-msg" name="message" style="min-height:80px"></textarea></div>
+    <label class="check"><input type="checkbox" name="anonymous" value="yes"> <span>Keep my gift anonymous on the supporters wall.</span></label>
+    <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <button class="btn btn-primary btn-block" type="submit" id="dn-submit">Pledge $25 →</button>
+   </form>
+   <p class="fine mt">2Nurses.com is an independent publisher, not a registered charity; contributions are not tax-deductible unless stated otherwise at the time of your gift. Gifts are non-refundable except in cases of error.</p>
+  </div>
+  <aside>
+   <div class="sticky">
+    <div class="form-card"><h3>Our goal</h3><div data-goal></div></div>
+    <div class="form-card mt">
+     <h3>Where your gift goes</h3>
+     <ul style="margin:8px 0 0 18px;color:var(--muted)">
+      <li><b>35%</b> Scholarships & free NCLEX prep</li>
+      <li><b>25%</b> Nurse creators & talent</li>
+      <li><b>15%</b> Contests, prizes & recognition</li>
+      <li><b>15%</b> Operations & hosting</li>
+      <li><b>10%</b> Marketing & outreach</li>
+     </ul>
+    </div>
+    <div class="form-card mt"><h3>Corporate giving</h3><p class="muted">Match employee gifts or underwrite a scholarship in your name.</p><a class="btn btn-teal btn-sm" href="advertise.html#sponsor-scholarship">Underwrite a scholarship</a></div>
+   </div>
+  </aside>
+ </div>
+</section>
+<section class="section section-alt">
+ <div class="container grid g4">
+  <div class="card"><div class="ico">🎓</div><h3>$10</h3><p>Prints 50 NCLEX cheat sheets for a nursing school study group.</p></div>
+  <div class="card"><div class="ico">📚</div><h3>$25</h3><p>One month of premium question-bank access for a student in need.</p></div>
+  <div class="card"><div class="ico">🏆</div><h3>$50</h3><p>Funds a Nurse of the Month thank-you gift.</p></div>
+  <div class="card"><div class="ico">💡</div><h3>$100</h3><p>Pays a nurse creator for a new free guide or video.</p></div>
+ </div>
+</section>
