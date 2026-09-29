@@ -7,7 +7,7 @@ Run: python3 _src/build.py   (writes finished pages to the repo root)
 import json, os, re, glob, datetime
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-BASE_URL = "https://webworksa1.github.io/2nurses-com/"  # change to https://2nurses.com/ after custom domain
+BASE_URL = "https://2nurses.com/"
 INTEREST = "https://web.works/contact"
 V = datetime.date.today().strftime("%Y%m%d")
 
