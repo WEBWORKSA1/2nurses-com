@@ -2,7 +2,7 @@
 
 Static, responsive, monetization-ready website for **2Nurses.com**: lead-gen funnels (schools, travel/jobs, employers), salary explorer, NCLEX practice, nurse tools, guides, video hub, community (mentor match, Nurse of the Month), contests, careers, donations, scholarships and an advertiser page.
 
-- **Live (GitHub Pages):** https://webworksa1.github.io/2nurses-com/
+- **Live:** https://2nurses.com/ (GitHub Pages, custom domain)
 - **Business plan & phase-wise build prompt:** [BUILD-PROMPT.md](BUILD-PROMPT.md)
 
 ## Edit & rebuild
