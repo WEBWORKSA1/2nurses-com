@@ -1,0 +1,64 @@
+<!--{"title":"Nurse Salary by State (Interactive Explorer) — RN, LPN, NP, CRNA Pay","description":"Sort estimated registered nurse salaries across all 50 states and DC, adjust for cost of living, compare RN, LPN, NP and CRNA pay, and check whether your job offer is fair.","path":"salary.html","priority":"0.9","scripts":["salary.js"]}-->
+<section class="page-hero">
+ <div class="container">
+  <div class="crumbs"><a href="index.html">Home</a> / Salary Explorer</div>
+  <h1>Nurse salary by state</h1>
+  <p>Estimated annual pay for every state and DC. Switch credential, search, sort, and adjust for cost of living to see where your paycheck goes furthest.</p>
+ </div>
+</section>
+<section class="section" style="padding-top:16px">
+ <div class="container">
+  <div class="stats">
+   <div class="stat"><b id="sal-nat">—</b><span>Average across states</span></div>
+   <div class="stat"><b id="sal-top" style="font-size:1.1rem">—</b><span>Highest raw pay</span></div>
+   <div class="stat"><b id="sal-adj" style="font-size:1.1rem">—</b><span>Best after cost of living</span></div>
+   <div class="stat"><b>2,080</b><span>Hours used for hourly rate</span></div>
+  </div>
+  <div class="form-card mt">
+   <div class="filters">
+    <div class="field" style="margin:0"><label for="sal-q">Search state</label><input id="sal-q" placeholder="e.g. Texas or TX"></div>
+    <div class="field" style="margin:0"><label for="sal-cred">Credential</label><select id="sal-cred"><option value="RN">Registered Nurse (RN)</option><option value="LPN">LPN / LVN</option><option value="CNA">CNA</option><option value="NP">Nurse Practitioner</option><option value="CRNA">CRNA</option></select></div>
+    <label class="check" style="margin:0 0 12px"><input type="checkbox" id="sal-adjust"> <span><b>Adjust for cost of living</b></span></label>
+   </div>
+  </div>
+  <div class="table-wrap mt">
+   <table id="sal-table">
+    <thead><tr><th data-k="0">State ↕</th><th data-k="1">Code</th><th class="num" data-k="2">Annual ↕</th><th class="num" data-k="3">Hourly ↕</th><th class="num" data-k="4">COL index ↕</th><th>Relative</th></tr></thead>
+    <tbody id="sal-body"></tbody>
+   </table>
+  </div>
+  <p class="fine mt">Figures are rounded estimates compiled from public U.S. Bureau of Labor Statistics (OEWS) data and regional price indexes; credential figures apply national ratios to state RN pay. They are for research only. Always confirm with employers and <a href="https://www.bls.gov/oes/" rel="nofollow noopener" target="_blank">bls.gov</a>.</p>
+ </div>
+</section>
+{{AD}}
+<section class="section section-alt">
+ <div class="container grid g2">
+  <div class="form-card" id="offer">
+   <h2 style="font-size:1.5rem">Is my job offer fair?</h2>
+   <p class="muted">Enter your offer and compare it with the estimated state average.</p>
+   <form id="offer-form" onsubmit="return false">
+    <div class="row"><div class="field"><label for="of-s">State</label><select id="of-s" name="state"></select></div><div class="field"><label for="of-r">Offered base rate ($/hr)</label><input id="of-r" name="rate" type="number" min="10" step="0.5" placeholder="42"></div></div>
+    <div class="field"><label for="of-h">Hours per week</label><input id="of-h" name="hours" type="number" value="36"></div>
+   </form>
+   <div id="offer-out" class="callout">Enter a rate to see your comparison.</div>
+  </div>
+  <div class="form-card">
+   <h2 style="font-size:1.5rem">Want a higher number?</h2>
+   <p class="muted">Travel and crisis contracts often pay well above staff rates. Ask vetted partners for full pay breakdowns — free, and no obligation.</p>
+   <a class="btn btn-primary" href="match.html#travel">Get travel pay packages →</a>
+   <h3 class="mt">5 proven ways nurses raise their pay</h3>
+   <ol style="margin:8px 0 0 20px;color:var(--muted)"><li>Add a specialty certification (CCRN, CEN, RNC-OB)</li><li>Pick up nights and weekends for differentials</li><li>Take travel or local contracts</li><li>Finish your BSN, then an MSN, NP or CRNA degree</li><li>Negotiate using market data like this page</li></ol>
+  </div>
+ </div>
+</section>
+<section class="section">
+ <div class="container article">
+  <h2>Understanding nurse pay</h2>
+  <p>Where you work matters about as much as what you do. West Coast and Northeast states lead on raw pay. After adjusting for housing and everyday costs, the ranking changes: several mid-cost states pull ahead because each dollar goes further.</p>
+  <h3>Base pay vs. total compensation</h3>
+  <p>Your hourly base is only part of the picture. Shift differentials (often $2–$8/hr for nights), weekend premiums, overtime at 1.5×, sign-on bonuses, and tuition reimbursement can add 10–25% to annual earnings. Travel contracts add tax-free housing and meal stipends when you keep a qualifying tax home.</p>
+  <h3>Credentials that change the curve</h3>
+  <p>Moving from LPN to RN, or from RN to NP or CRNA, is the biggest pay lever in nursing. Use our <a href="match.html#school">school match</a> to compare accredited bridge programs, including online RN-to-BSN and NP tracks.</p>
+ </div>
+</section>
+{{AD_FOOT}}
